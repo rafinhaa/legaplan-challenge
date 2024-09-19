@@ -1,0 +1,26 @@
+@mixin button($bg-from, $bg-to, $color) {
+  display: flex;
+  flex: 1;
+  background-image: linear-gradient(to right, $bg-from, $bg-to);
+  color: $color;
+  border-radius: 8px;
+  padding: 16px 24px;
+  font-size: 16px;
+  letter-spacing: -0.48px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+}
+
+.addTask {
+  @include button(var(--color-blue), #53c0f0, #fff);
+}
+
+.deleteTask {
+  @include button(#D30707, #F05353, #fff);
+}
+
+.cancelTask {
+  @include button(#e7eefb, #e7eefb, #000);
+  font-weight: 400;
+}
