@@ -19,6 +19,11 @@
   font-family: "Inter Tight", sans-serif;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 ul,
 ol {
