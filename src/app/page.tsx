@@ -1,11 +1,13 @@
 'use client';
 
+import { Header } from "@/components/header/header";
+
 const Home = () => {
 
   return (
-    <div>
-      <h1>Legaplan</h1>
-    </div>
+    <>
+      <Header />
+    </>
   );
 };
 

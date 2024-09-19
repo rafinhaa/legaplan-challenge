@@ -1,0 +1,32 @@
+@use '../../app/mobile' as break;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d7dde9;
+  padding-bottom: 24px;
+  gap: 8px;
+	color: var(--text-primary-color);
+
+	@include break.mobile {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: 100%;
+		height: 100%;
+	}
+
+  h1 {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.48px;
+    line-height: 29.04px;
+  }
+
+  p {
+    letter-spacing: -0.48px;
+    line-height: 19.36px;
+    color: var(--text-secondary-color);
+  }
+}
