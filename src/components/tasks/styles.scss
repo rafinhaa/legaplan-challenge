@@ -57,6 +57,11 @@
     text-decoration: line-through;
   }
 
+  .no-task {
+    color: var(--text-secondary-color);
+    font-size: 12px;
+  }
+
   .trash-icon {
     width: 24px;
     height: 24px;
