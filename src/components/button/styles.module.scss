@@ -1,5 +1,6 @@
 @mixin button($bg-from, $bg-to, $color) {
   display: flex;
+  width: 450px;
   flex: 1;
   background-image: linear-gradient(to right, $bg-from, $bg-to);
   color: $color;
