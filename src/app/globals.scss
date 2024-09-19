@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@use './mobile' as break;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --text-primary-color:#000000;
+  --text-secondary-color:rgba(0, 0, 0, 0.54);
+  --background-color-gray: rgba(231, 238, 251, 1);
+  --background-color-white: rgba(255, 255, 255, 1);
+  --border-gray: #d7dde9;
+  --color-blue: #0796d3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter Tight", sans-serif;
+}
+
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--primary-color-white);
+  padding: 1.5rem 3.5rem;
+
+  @include break.mobile {
+    padding: 1.5rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  color: var(--text-primary-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input {
+  font-family: inherit;
+}
